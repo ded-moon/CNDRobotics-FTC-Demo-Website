@@ -1,0 +1,36 @@
+#countdown{
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: 55px;
+    color: rgb(194, 135, 248);
+}
+
+body {
+    background-image: url('/assets/background.jpg');
+    background-repeat: no-repeat;
+    margin-top: 180px;
+}
+
+.header{
+    font-family: "Raleway", sans-serif;
+    font-size: 240%;
+    color: aliceblue;
+    text-align: center;
+    line-height: 0.8px;
+}
+
+.center{
+    font-family: 'Libre Baskerville', serif;
+    color: aliceblue;
+    text-align: center;
+    font-size: 200%;
+}
+
+.footer{
+    color:aquamarine;
+    position: fixed;
+    bottom: 5%;
+    left:45%;
+
+    font-size:120%;
+}

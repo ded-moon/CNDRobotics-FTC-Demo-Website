@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href=/style.css>
+
+        <title>CNDRobotics' FTC Demo</title>
+        <link rel="icon" href="/assets/icon.png" type="image">
+
+        <meta name="description" content="CNDRobotics' FTC Demo" />
+        <meta property="og:description" content="CNDRobotics' FTC Demo" />
+        <meta name="theme-color" content="#FFFFFF" />
+        <meta name="author" content="ded_moon" />
+        <meta property="og:title" content="ded_moon" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Rajdhani:wght@500&family=Raleway&display=swap" rel="stylesheet">  
+    </head>
+    <body>
+
+        <div class="header">
+            <h1 class="w3-center w3-animate-top">COMING SOON</h1>
+        </div>
+        <div>
+            <p id="countdown"> </p>
+            <script>
+                var countDownDate = new Date("Jan 13, 2023 07:13:13").getTime();
+                var x = setInterval(function() {
+                    var now = new Date().getTime();
+                    var distance = countDownDate - now;
+
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("countdown").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+            </script>
+        </div>
+        <div class="center">
+            <p>We're waiting for you.</p>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <a href="http://cnd.ro/cndrobotics/" style="text-decoration: none;">CNDrobotics website</a>
+            </div>
+        </footer>
+ 
+    </body>
+</html>
