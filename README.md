@@ -1,2 +1,2 @@
-# CNDRobotics-FTC-Demo-Website
+# CNDRobotics-FTC-Demo-Website (ABANDONED!)
 The website for CNDRobotics' FTC Demo
